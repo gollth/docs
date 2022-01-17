@@ -33,8 +33,8 @@
 extensions = [
   'sphinx.ext.mathjax',
   'sphinx.ext.todo',
-  'sphinxcontrib.redirects',
-  'm2r'
+  'sphinx_multiversion',
+  'm2r2'
 ]
 
 # TODO: set mathjax_path for offline support
@@ -90,6 +90,12 @@ todo_include_todos = True
 # a list of builtin themes.
 #
 html_theme = 'sphinx_rtd_theme'
+
+html_sidebars = {
+    '**': [
+        'versions.html',
+    ],
+}
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
